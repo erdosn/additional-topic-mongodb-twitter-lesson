@@ -26,12 +26,24 @@ import matplotlib.pyplot as plt
 
 ```python
 # use 'with' to open file because it automatically closes files for you
-with open("/Users/rafael/.ssh/twitter_app00.json") as f:
+with open("") as f:
     d = json.load(f)
 print(d.keys())
 ```
 
-    dict_keys(['consumer_key', 'consumer_secret', 'access_token', 'access_token_secret'])
+
+    ---------------------------------------------------------------------------
+
+    FileNotFoundError                         Traceback (most recent call last)
+
+    <ipython-input-1-a6c6df099b6f> in <module>
+          1 # use 'with' to open file because it automatically closes files for you
+    ----> 2 with open("") as f:
+          3     d = json.load(f)
+          4 print(d.keys())
+
+
+    FileNotFoundError: [Errno 2] No such file or directory: ''
 
 
 
